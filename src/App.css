@@ -1,23 +1,22 @@
 .container {
   display: flex;
-  height: 100vh; /* 100% of the viewport height */
-}
+  height: 100vh; }
 
 .content {
-  flex: 1; /* Take up remaining space */
+  flex: 1;
   padding: 20px;
 }
 
 .image-container {
-  flex: 1; /* Take up remaining space */
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .image {
-  max-width: none; /* Take up half of the container width */
-  height: auto;
+  max-width: none; 
+  height: 110%;
   width : 100%;
 
 }
@@ -73,18 +72,20 @@
 
 
 
-/* footer.css */
 
 .footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
-  display: flex; /* Add this line */
-  justify-content: center; /* Add this line */
+  display: flex; 
+  justify-content: center;
 }
 body {
-  background-color: #ce7f7f; /* Set your desired background color */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 
