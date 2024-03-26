@@ -6,13 +6,12 @@ function App() {
   return (
     <div className="container">
       <div className="image-container">
-       
         <img src={imageSrc} alt="Image" className="image" />
       </div>
       <div className="login-container">
         <div className="login-form">
           <h2>WELCOME BACK!</h2>
-          <p> please enter your details to proceed</p>
+          <p>Please enter your details to proceed</p>
           <div className="form-group">
             <label htmlFor="username">Username</label>
             <input type="text" id="username" placeholder="Enter your username" />
@@ -21,6 +20,7 @@ function App() {
             <label htmlFor="password">Password</label>
             <input type="password" id="password" placeholder="Enter your password" />
           </div>
+        
           <button className="login-button">Login</button>
           <p className="create-account">Don't have an account? <a href="#">Create one</a></p>
         </div>
@@ -28,5 +28,5 @@ function App() {
     </div>
   );
 }
-
+       
 export default App;

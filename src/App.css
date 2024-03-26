@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
 }
 
 .image {
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
 }
 
@@ -50,8 +51,10 @@ body {
   margin-bottom: 5px;
 }
 
-.form-group input {
-  width: 80%;
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="checkbox"] {
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -76,6 +79,9 @@ body {
   text-decoration: none;
 }
 
+/* Additional styles for checkbox alignment */
+
+
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
@@ -90,7 +96,7 @@ body {
   }
 
   .image {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
   }
 }
