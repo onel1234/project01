@@ -3,13 +3,14 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #ffffff;
-  overflow: hidden;
+  overflow: hidden; /* Hide scrollbar */
 }
 
 .container {
   display: flex;
   flex-direction: row-reverse; /* Reversing the order */
   height: 100vh;
+  overflow: hidden; /* Hide scrollbar */
 }
 
 .image-container {
@@ -17,6 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden; /* Hide scrollbar */
 }
 
 .image {
@@ -30,13 +32,13 @@ body {
   align-items: center;
   padding: 20px;
   flex: 1;
+  overflow: hidden; /* Hide scrollbar */
 }
 
 .login-form {
-  background-color: #ffffff;
-  /* White background for login section */
+  background-color: #ffffff; /* White background for login section */
   padding: 20px;
- 
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
   width: 80%;
   max-width: 400px;
@@ -51,10 +53,8 @@ body {
   margin-bottom: 5px;
 }
 
-.form-group input[type="text"],
-.form-group input[type="password"],
-.form-group input[type="checkbox"] {
-  width: 100%;
+.form-group input {
+  width: 80%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -79,9 +79,6 @@ body {
   text-decoration: none;
 }
 
-/* Additional styles for checkbox alignment */
-
-
 @media only screen and (max-width: 600px) {
   .container {
     flex-direction: column;
@@ -96,7 +93,7 @@ body {
   }
 
   .image {
-    max-width: 120%;
+    max-width: 100%;
     height: auto;
   }
 }
